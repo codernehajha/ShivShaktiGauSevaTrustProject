@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gau Seva</title>
+    <!-- http://localhost/GauSevaWebPage/index.html -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-primary p-3 text-center">
+      <div class="container-fluid text-end">
+        <div>
+          <button class="btn btn-outline-light">LOGIN</button>
+          <button class="btn btn-light">REGISTRATION</button>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="http://localhost/gausevawebpage/images/Gou seva logo.png"  alt="Gau Seva Kendra" class="logo">
+          <span class="trust-name ms-2">Shiv Shakti Gau Seva Trust</span>
+        </a>
+
+      <!-- Mobile Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/navbar.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                GALLERY
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="photo.html">PHOTOS</a></li>
+                <li><a class="dropdown-item" href="video.html">VIDEOS</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                DONATION IN KIND
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="donate.html"
+                    >FODDER & MEDICINE</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="donate.html"
+                    >AMBULANCE & MEDICINE</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="donate.html">CESAREAN</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+            <li>
+              <a href="donate.html"
+                ><button class="glow-btn">DONATE NOW</button></a
+              >
+            </li>
+          </ul>
+          <div></div>
+        </div>
+      </div>
+    </nav>
+    <!-- Slider -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="http://localhost/gausevawebpage/images/Gou seva banners/fogjhequ0uti40goixfa.webp" class="d-block w-100 " alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Join the Movement – Be a Part of Gau Seva</h5>
+            <p>
+              Each of us has the power to make a difference. Your small effort
+              can bring immense relief to helpless cows in need. Whether through
+              donations, volunteering, or spreading awareness, every step counts
+              in this noble mission. Gau Seva Kendra offers a platform for
+              individuals to participate in cow protection, providing shelter,
+              food, and healthcare to the needy. Join hands with us and become a
+              guardian of these sacred beings. Together, we can create a future
+              where love, respect, and compassion define our relationship with
+              all living creatures.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="http://localhost/gausevawebpage/images/Gou seva banners/xaitlavun8ssfaegilxp.webp" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>The Sacred Duty of Gau Seva</h5>
+            <p>
+              Cows hold a sacred place in our culture, symbolizing purity,
+              nourishment, and selfless service. Gau Seva is not just an act of
+              kindness but a divine responsibility to care for these gentle
+              beings who provide us with nourishment and sustenance. Protecting
+              and nurturing cows ensures the preservation of nature’s balance,
+              supporting a harmonious coexistence between humans and animals. By
+              offering food, shelter, and medical care, we uphold our ethical
+              and spiritual duty, contributing to a world where compassion and
+              respect for all living beings flourish.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- About Gau Seva Section -->
+<section class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-lg-6">
+      <h2 class="text-primary fw-bold">Welcome to Shiv Shakti Gau Seva Trust</h2>
+      <p class="text-muted">Founded in **[2024]**, **Shiv Shakti Gau Seva Trust, Ambedkar Nagar**, is dedicated to the protection and well-being of cows. Our mission is to rescue, rehabilitate, and provide shelter to abandoned and injured cows while promoting organic farming and sustainable living.</p>
+      <ul>
+        <li><strong>🐄 Rescue & Shelter:</strong> Providing a safe home for abandoned cows.</li>
+        <li><strong>💊 Medical Care:</strong> Ensuring proper treatment, vaccination, and emergency care.</li>
+        <li><strong>🌿 Organic Farming:</strong> Supporting sustainable agriculture with cow-based farming.</li>
+        <li><strong>🚑 Emergency Services:</strong> Offering ambulance support and critical veterinary surgeries.</li>
+      </ul>
+      <button class="btn btn-primary" ><a href="/about.html" style="color: white;">Learn More</a></button>
+    </div>
+    <div class="col-lg-6 text-center">
+      <img src="http://localhost/gausevawebpage/images/carousel3.jpg" class="img-fluid rounded shadow-lg" alt="Gau Seva">
+    </div>
+  </div>
+</section>
+
+<!-- Mission & Vision Section -->
+<section class="container my-5">
+  <div class="text-center">
+    <h2 class="text-success fw-bold">Our Mission & Vision</h2>
+    <p class="text-muted">We believe that every cow deserves care, respect, and love. Through our efforts, we aim to create a world where cows are protected and valued as sacred beings.</p>
+  </div>
+
+  <div class="row text-center mt-4">
+    <div class="col-md-4">
+      <div class="card p-3 shadow-lg">
+        <img src="http://localhost/gausevawebpage/images/carousel1.avif" class="img-fluid rounded mb-3" alt="Save Cows">
+        <h4 class="fw-bold text-primary">Cow Protection</h4>
+        <p>Rescuing and rehabilitating abandoned and injured cows.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-3 shadow-lg">
+        <img src="http://localhost/gausevawebpage/images/carousel3.jpg" class="img-fluid rounded mb-3" alt="Organic Farming">
+        <h4 class="fw-bold text-success">Sustainable Farming</h4>
+        <p>Encouraging organic farming through cow-based agricultural methods.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-3 shadow-lg">
+        <img src="http://localhost/gausevawebpage/images/carousel2.jpg" class="img-fluid rounded mb-3" alt="Community Service">
+        <h4 class="fw-bold text-warning">Community Service</h4>
+        <p>Raising awareness and involving people in cow protection efforts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="container my-5 text-center ">
+  <h2 class="text-danger fw-bold">Join Our Mission – Support Gau Seva</h2>
+  <p class="text-muted">Be a part of our noble cause by donating, volunteering, or spreading awareness.</p>
+  <img src="http://localhost/gausevawebpage/images/gauDaan.jpg" class="img-fluid rounded shadow-lg my-3" alt="Helping Cows">
+  <div class="mt-3">
+    <button class="btn btn-danger btn-lg"><a href="/donate.html" style="color: white; text-decoration: none;">Donate Now</a></button>
+    <button class="btn btn-success btn-lg"><a href="/contact.html" style="color: white; text-decoration: none;">Volunteer</a></button>
+  </div>
+</section>
+
+    
+    <section class="container my-5">
+      <h2 class="text-center text-warning mb-4">Ways of Donations for Gau Seva</h2>
+      
+      <!-- Carousel for Mobile Users -->
+      <div id="donationCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card text-center shadow-lg p-3">
+              <i class="fas fa-seedling fa-3x text-success mb-3"></i>
+              <h4>Fodder Donation</h4>
+              <p>Provide nutritious food for cows.</p>
+              <a href="/donate.html" class="btn btn-success">Donate Now</a>
+            </div>
+          </div>
+    
+          <div class="carousel-item">
+            <div class="card text-center shadow-lg p-3">
+              <i class="fas fa-medkit fa-3x text-danger mb-3"></i>
+              <h4>Medicine Donation</h4>
+              <p>Support medical care for sick cows.</p>
+              <a href="/donate.html" class="btn btn-danger">Donate Now</a>
+            </div>
+          </div>
+    
+          <div class="carousel-item">
+            <div class="card text-center shadow-lg p-3">
+              <i class="fas fa-home fa-3x text-primary mb-3"></i>
+              <h4>Shelter Donation</h4>
+              <p>Help build safe cow shelters.</p>
+              <a href="/donate.html" class="btn btn-primary">Donate Now</a>
+            </div>
+          </div>
+    
+          <div class="carousel-item">
+            <div class="card text-center shadow-lg p-3">
+              <i class="fas fa-tint fa-3x text-info mb-3"></i>
+              <h4>Water Supply Donation</h4>
+              <p>Ensure clean drinking water for cows.</p>
+              <a href="/donate.html" class="btn btn-info">Donate Now</a>
+            </div>
+          </div>
+    
+          <div class="carousel-item">
+            <div class="card text-center shadow-lg p-3">
+              <i class="fas fa-hands-helping fa-3x text-warning mb-3"></i>
+              <h4>Volunteer Support</h4>
+              <p>Help in cow care and maintenance.</p>
+              <a href="/donate.html" class="btn btn-warning">Join Now</a>
+            </div>
+          </div>
+    
+          <div class="carousel-item">
+            <div class="card text-center shadow-lg p-3">
+              <i class="fas fa-donate fa-3x text-secondary mb-3"></i>
+              <h4>Financial Donation</h4>
+              <p>Contribute funds for overall welfare.</p>
+              <a href="/donate.html" class="btn btn-secondary">Donate Now</a>
+            </div>
+          </div>
+        </div>
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#donationCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#donationCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    
+      <!-- Grid Layout for Larger Screens -->
+      <div class="row d-none d-md-flex">
+        <div class="col-md-4">
+          <div class="card text-center shadow-lg p-4">
+            <i class="fas fa-seedling fa-3x text-success mb-3"></i>
+            <h4>Fodder Donation</h4>
+            <p>Provide nutritious food for cows.</p>
+            <a href="/donate.html" class="btn btn-success">Donate Now</a>
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+          <div class="card text-center shadow-lg p-4">
+            <i class="fas fa-medkit fa-3x text-danger mb-3"></i>
+            <h4>Medicine Donation</h4>
+            <p>Support medical care for sick cows.</p>
+            <a href="/donate.html" class="btn btn-danger">Donate Now</a>
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+          <div class="card text-center shadow-lg p-4">
+            <i class="fas fa-home fa-3x text-primary mb-3"></i>
+            <h4>Shelter Donation</h4>
+            <p>Help build safe cow shelters.</p>
+            <a href="/donate.html" class="btn btn-primary">Donate Now</a>
+          </div>
+        </div>
+    
+        <div class="col-md-4 mt-4">
+          <div class="card text-center shadow-lg p-4">
+            <i class="fas fa-tint fa-3x text-info mb-3"></i>
+            <h4>Water Supply Donation</h4>
+            <p>Ensure clean drinking water for cows.</p>
+            <a href="/donate.html" class="btn btn-info">Donate Now</a>
+          </div>
+        </div>
+    
+        <div class="col-md-4 mt-4">
+          <div class="card text-center shadow-lg p-4">
+            <i class="fas fa-hands-helping fa-3x text-warning mb-3"></i>
+            <h4>Volunteer Support</h4>
+            <p>Help in cow care and maintenance.</p>
+            <a href="/contact.html" class="btn btn-warning">Join Now</a>
+          </div>
+        </div>
+    
+        <div class="col-md-4 mt-4">
+          <div class="card text-center shadow-lg p-4">
+            <i class="fas fa-donate fa-3x text-secondary mb-3"></i>
+            <h4>Financial Donation</h4>
+            <p>Contribute funds for overall welfare.</p>
+            <a href="/donate.html" class="btn btn-secondary">Donate Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Services Section -->
+<section class="container my-5">
+  <h2 class="text-center text-primary mb-4">Our Services</h2>
+
+  <!-- Carousel for Mobile View -->
+  <div id="serviceCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card text-center shadow-lg p-4">
+          <i class="fas fa-heart fa-3x text-danger mb-3"></i>
+          <h3>Rescue & Shelter</h3>
+          <p>Providing safe homes for abandoned and injured cows.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="card text-center shadow-lg p-4">
+          <i class="fas fa-medkit fa-3x text-success mb-3"></i>
+          <h3>Medical Care</h3>
+          <p>Ensuring proper treatment and health services for cows.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="card text-center shadow-lg p-4">
+          <i class="fas fa-seedling fa-3x text-warning mb-3"></i>
+          <h3>Organic Farming</h3>
+          <p>Promoting sustainable agriculture with cow-based farming.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="card text-center shadow-lg p-4">
+          <i class="fas fa-leaf fa-3x text-primary mb-3"></i>
+          <h3>Eco-Friendly Products</h3>
+          <p>Producing organic dairy, compost, and medicinal products.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="card text-center shadow-lg p-4">
+          <i class="fas fa-hands-helping fa-3x text-info mb-3"></i>
+          <h3>Community Awareness</h3>
+          <p>Educating people on cow protection and environmental benefits.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="card text-center shadow-lg p-4">
+          <i class="fas fa-tint fa-3x text-secondary mb-3"></i>
+          <h3>Water Conservation</h3>
+          <p>Implementing water-saving techniques for sustainable cow shelters.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Grid Layout for Larger Screens -->
+  <div class="row d-none d-md-flex">
+    <div class="col-md-4">
+      <div class="card text-center shadow-lg p-4 service-card">
+        <i class="fas fa-heart fa-3x text-danger mb-3"></i>
+        <h3>Rescue & Shelter</h3>
+        <p>Providing safe homes for abandoned and injured cows.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card text-center shadow-lg p-4 service-card">
+        <i class="fas fa-medkit fa-3x text-success mb-3"></i>
+        <h3>Medical Care</h3>
+        <p>Ensuring proper treatment and health services for cows.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card text-center shadow-lg p-4 service-card">
+        <i class="fas fa-seedling fa-3x text-warning mb-3"></i>
+        <h3>Organic Farming</h3>
+        <p>Promoting sustainable agriculture with cow-based farming.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mt-4">
+      <div class="card text-center shadow-lg p-4 service-card">
+        <i class="fas fa-leaf fa-3x text-primary mb-3"></i>
+        <h3>Eco-Friendly Products</h3>
+        <p>Producing organic dairy, compost, and medicinal products.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mt-4">
+      <div class="card text-center shadow-lg p-4 service-card">
+        <i class="fas fa-hands-helping fa-3x text-info mb-3"></i>
+        <h3>Community Awareness</h3>
+        <p>Educating people on cow protection and environmental benefits.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mt-4">
+      <div class="card text-center shadow-lg p-4 service-card">
+        <i class="fas fa-tint fa-3x text-secondary mb-3"></i>
+        <h3>Water Conservation</h3>
+        <p>Implementing water-saving techniques for sustainable cow shelters.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  
+    <section class="container my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1682126873353-7d566c9f7e96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2xpZGVyJTIwY293JTIwc2VydmUlMjBoZWlnaHQlMjBvZiUyMDQwMHB4fGVufDB8fDB8fHww"
+            class="img-fluid rounded"
+            alt="Gau Seva Poster"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-warning">Why Gau Seva?</h2>
+          <p>
+            Cows are sacred and need our protection. Join us in serving them by
+            providing food, shelter, and care.
+          </p>
+          <button class="btn btn-success"><a href="/about.html" style="color: white; text-decoration:none;">Learn More</a></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+<section class="container my-5">
+  <h2 class="text-center text-primary mb-4">What People Say</h2>
+
+  <!-- Mobile Carousel -->
+  <div id="testimonialCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active ">
+        <div class="card p-4 text-center shadow-lg col-sm-6 col-md-4">
+          <img src="http://localhost/gausevawebpage/images/maleRev.png" class="rounded-circle col-sm-6 col-md-4" alt="User 1">
+          <h5>Rajesh Kumar</h5>
+          <p class="text-muted">"A wonderful initiative to protect and care for cows. Highly recommend!"</p>
+          <div class="text-warning">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card p-4 text-center shadow-lg col-sm-6 col-md-4">
+          <img src="http://localhost/gausevawebpage/images/femaleRev.png" class="rounded-circle col-sm-6 col-md-4" alt="User 2">
+          <h5>Priya Sharma</h5>
+          <p class="text-muted">"Their dedication to cow welfare is inspiring. Truly heartwarming!"</p>
+          <div class="text-warning">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card p-4 text-center shadow-lg col-sm-6 col-md-4">
+          <img src="http://localhost/gausevawebpage/images/maleRev.png" class="rounded-circle col-sm-6 col-md-4" alt="User 3">
+          <h5>Amit Verma</h5>
+          <p class="text-muted">"Happy to contribute to such a noble cause. Keep up the great work!"</p>
+          <div class="text-warning">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card p-4 text-center shadow-lg">
+          <img src="http://localhost/gausevawebpage/images/femaleRev.png" class="rounded-circle mx-auto mb-3" alt="User 4">
+          <h5>Sunita Yadav</h5>
+          <p class="text-muted">"Amazing work! The rescued cows are treated with utmost care."</p>
+          <div class="text-warning">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card p-4 text-center shadow-lg">
+          <img src="http://localhost/gausevawebpage/images/maleRev.png" class="rounded-circle mx-auto mb-3" alt="User 5">
+          <h5>Vikram Singh</h5>
+          <p class="text-muted">"Their cow-based organic farming is revolutionary. Big supporter!"</p>
+          <div class="text-warning">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card p-4 text-center shadow-lg">
+          <img src="http://localhost/gausevawebpage/images/femaleRev.png" class="rounded-circle mx-auto mb-3" alt="User 6">
+          <h5>Neha Patel</h5>
+          <p class="text-muted">"One of the best organizations I’ve seen for cow protection."</p>
+          <div class="text-warning">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Grid Layout for Larger Screens -->
+  <div class="row d-none d-md-flex">
+    <div class="col-md-4">
+      <div class="card p-4 text-center shadow-lg testimonial-card">
+        <img src="http://localhost/gausevawebpage/images/maleRev.png" class="rounded-circle mx-auto mb-3" alt="User 1">
+        <h5>Rajesh Kumar</h5>
+        <p class="text-muted">"A wonderful initiative to protect and care for cows. Highly recommend!"</p>
+        <div class="text-warning">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-4 text-center shadow-lg testimonial-card">
+        <img src="http://localhost/gausevawebpage/images/femaleRev.png" class="rounded-circle mx-auto mb-3" alt="User 2">
+        <h5>Priya Sharma</h5>
+        <p class="text-muted">"Their dedication to cow welfare is inspiring. Truly heartwarming!"</p>
+        <div class="text-warning">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-4 text-center shadow-lg testimonial-card">
+        <img src="http://localhost/gausevawebpage/images/maleRev.png" class="rounded-circle mx-auto mb-3" alt="User 3">
+        <h5>Amit Verma</h5>
+        <p class="text-muted">"Happy to contribute to such a noble cause. Keep up the great work!"</p>
+        <div class="text-warning">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mt-4">
+      <div class="card p-4 text-center shadow-lg testimonial-card">
+        <img src="http://localhost/gausevawebpage/images/femaleRev.png" class="rounded-circle mx-auto mb-3" alt="User 4">
+        <h5>Sunita Yadav</h5>
+        <p class="text-muted">"Amazing work! The rescued cows are treated with utmost care."</p>
+        <div class="text-warning">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mt-4">
+      <div class="card p-4 text-center shadow-lg testimonial-card">
+        <img src="http://localhost/gausevawebpage/images/maleRev.png" class="rounded-circle mx-auto mb-3" alt="User 5">
+        <h5>Vikram Singh</h5>
+        <p class="text-muted">"Their cow-based organic farming is revolutionary. Big supporter!"</p>
+        <div class="text-warning">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mt-4">
+      <div class="card p-4 text-center shadow-lg testimonial-card">
+        <img src="http://localhost/gausevawebpage/images/femaleRev.png" class="rounded-circle mx-auto mb-3" alt="User 6">
+        <h5>Neha Patel</h5>
+        <p class="text-muted">"One of the best organizations I’ve seen for cow protection."</p>
+        <div class="text-warning">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer fade-in">
+      <div class="footer-overlay">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-md-2 text-start">
+              <h5 class="text-warning">Quick Links</h5>
+              <a href="services.html">Blog</a><br />
+              <a href="about.html">About Us</a><br />
+              <a href="about.html">What's New</a><br />
+              <a href="photo.html">Downloads</a><br />
+              <a href="contact.html">Contact Us</a><br />
+              <a href="about.html">Newsletter</a><br />
+              <a href="#">Benefits of Cow</a>
+            </div>
+            <div class="col-md-3 text-start">
+              <h5 class="text-warning">Services</h5>
+              <a href="/policies.html">Terms & Conditions</a><br />
+              <a href="/policies.html">Privacy Policy</a><br />
+              <a href="/policies.html">Refund Policy</a><br />
+              <a href="/policies.html">Disclaimer</a><br />
+              <a href="/policies.html">End User Agreement</a><br />
+              <a href="services.html">Shelter & Medical</a><br />
+              <a href="services.html">Cow Protection</a>
+            </div>
+            <div class="col-md-4 text-start">
+              <h5 class="text-warning">Contact Us</h5>
+              <p>
+                <i class="fas fa-map-marker-alt text-danger"></i> Shiv Shakti
+                Gou Seva Trust, Vill Musepur Girant Post Seehmai Karirat,
+                Sharvankshetra road Govt. School Musepur Girant, Moosepur Giron,
+                Seehmaikarirat B.O, Ambedkar Nagar,Uttar Pradesh, India - 224122
+              </p>
+              <p>
+                <i class="fas fa-phone text-success"></i>
+                <a href="#">+918726664105</a>
+              </p>
+              <p>
+                <i class="fas fa-envelope"></i
+                ><a href="#">shivshaktigousevatrust@gmail.com</a>
+              </p>
+            </div>
+            <div class="col-md-3 text-start">
+              <h5 class="text-warning">Payment Methods</h5>
+              <p>
+                Bank: BARODA U.P. BANK<br />
+                Acc No: 54810100030726<br />
+                IFSC: <br />
+                <a href="#">UPI: gauseva@upi</a>
+              </p>
+              <p>Scan & Pay:</p>
+              <div class="qr-code">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fj_osV9_bBe6yS7s4Sc93fWrhByeRhFSA&s"
+                  alt="QR Code"
+                  width="100"
+                />
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="text-center">
+            <p>© 2025 ShivShaktiGauSevaTrust | All Rights Reserved</p>
+            <div class="footer-icons">
+              <i class="fab fa-facebook" style="color: blue"></i>
+              <i class="fab fa-instagram" style="color: magenta"></i>
+              <i class="fab fa-twitter" style="color: black"></i>
+              <i class="fab fa-youtube" style="color: red"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

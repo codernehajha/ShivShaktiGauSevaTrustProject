@@ -1,0 +1,234 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #ff9800, #ff5722);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar */
+.logo {
+    height: 100px; /* Default size */
+    width: 100px;  /* Make sure width and height are equal */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image fits well */
+    border: 2px solid #ddd; /* Optional: Adds a border for better visibility */
+}
+.trust-name {
+    font-size: 22px;  /* Adjust text size */
+    font-weight: bold;
+    color: #333; /* Adjust text color */
+    line-height: 1.2; /* Reduce space between lines */
+    white-space: nowrap; /* Prevents breaking into multiple lines */
+}
+.navbar {
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: #ff5722;
+}
+.navbar-nav .dropdown-item:hover{
+    color: #ff5722;
+}
+
+/* Donate Button */
+.glow-btn {
+    background: linear-gradient(45deg, #ff5722, #ff9800);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #ff9800;
+    transition: 0.3s;
+}
+.glow-btn:hover {
+    box-shadow: 0 0 15px #ff5722;
+    transform: scale(1.05);
+}
+
+/* Slider */
+.carousel-img {
+    height: 70vh; /* Adjust height dynamically */
+    object-fit: cover; /* Ensures images cover the container without distortion */
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+.donation-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+.donation-box img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+.donation-container {
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.donation-container :hover {
+    transform: scale(1.05);
+}
+
+/* <!-- Additional CSS for hover effects --> */
+.service-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+/* Poster Section */
+.container img {
+    transition: transform 0.3s ease-in-out;
+}
+.container img:hover {
+    transform: scale(1.05);
+}
+/* hover style for review */
+
+.testimonial-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+.footer-icons i {
+    font-size: 20px;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+.footer-icons i:hover {
+    transform: scale(1.2);
+}
+.qr-code {
+    width: 120px;  /* Adjust size */
+    height: auto;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.qr-code:hover {
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+.slide-up {
+    animation: slideUp 1.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .carousel-item img {
+        height: 350px;
+    }
+    .footer {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+            height: 60px;
+            width: 60px;
+        
+    }
+    .trust-name {
+        font-size: 18px; /* Smaller text on mobile */
+    }
+    .glow-btn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    .carousel-img {
+        height: 50vh;
+      }
+    .carousel-caption h5 {
+        font-size: 18px;
+    }
+    .carousel-caption p {
+        font-size: 14px;
+    }
+    .footer-icons i {
+        font-size: 18px;
+    }
+    .footer .row {
+        text-align: left;
+    }
+    .footer .col-md-3 {
+        width: 100%;  /* Make each section take full width */
+        text-align: left;
+        margin-bottom: 10px; /* Add spacing between sections */
+    }
+}
+
+@media (max-width: 576px) {
+    
+        .logo {
+            height: 40px;
+            width: 40px;
+        }
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .carousel-img {
+        height: 40vh; /* Extra small screens */ 
+    }
+    .footer {
+        text-align: center;
+    }
+}
